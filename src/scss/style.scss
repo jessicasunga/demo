@@ -86,16 +86,23 @@ body {
 
     /* ------------ Filter --------------- */
 
-    .filter.top-buffer {
-       
-        margin-top: 60px;
+    .filter {
         
-        h5, p {
+        h5, p, ul {
             margin-bottom: 0;
         }
 
         p {
             color: $main-color;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1rem;
+
+            li {
+                color: #666666;
+            }
         }
 
     }
@@ -133,7 +140,6 @@ body {
         }
 
         .table {
-
             background-color: #fff;
 
             thead{

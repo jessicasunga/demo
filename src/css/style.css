@@ -38,12 +38,15 @@ body {
   body .sidebar {
     background-color: #EAEAEA;
     height: 100vh; }
-  body .filter.top-buffer {
-    margin-top: 60px; }
-    body .filter.top-buffer h5, body .filter.top-buffer p {
-      margin-bottom: 0; }
-    body .filter.top-buffer p {
-      color: #1691A7; }
+  body .filter h5, body .filter p, body .filter ul {
+    margin-bottom: 0; }
+  body .filter p {
+    color: #1691A7; }
+  body .filter ul {
+    list-style: none;
+    padding-left: 1rem; }
+    body .filter ul li {
+      color: #666666; }
   body main .table-header .nav-tabs {
     border-bottom: 0; }
     body main .table-header .nav-tabs .nav-link.active {
