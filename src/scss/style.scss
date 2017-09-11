@@ -9,7 +9,7 @@ body {
     background: $bg-color;
     font-family: 'Roboto', sans-serif;
 
-    /* General */
+    /* ------------ General ------------- */
 
     .btn-primary {
 
@@ -23,7 +23,7 @@ body {
 
     }
 
-    /* Utilities */
+    /* ------------ Utilities ------------- */
     .top-buffer {
         margin-top: 20px;
     }
@@ -32,20 +32,51 @@ body {
         border-bottom: 1px solid rgba(0,0,0,.05);
     }    
 
-    /* Top Nav */
+    /* ------------- Top Nav -------------- */
     .navbar {
 
-        .navbar-brand {
+        padding-top: 0px;
+        padding-bottom: 0px;
 
+        @media (max-width: 992px) {
+            padding: 15px;
+        }
+        
+        .navbar-brand {
             .logo {
                 width: 180px;
             }
+        }
 
+        .navbar-nav {
+
+            .logout {
+                border-left: 1px solid $bg-color;
+                padding-left: 10px;
+            }
+    
+            .nav-link {
+                padding: 1.1rem !important;
+    
+                .oi-account-logout {
+                    margin-right: 10px;
+                }
+            }
+    
+            .active {
+    
+                .nav-link {
+    
+                    color: $main-color !important;
+                    background-color: #FBFBFB;
+    
+                }
+            }
         }
 
     }
 
-    /* Sidebar */
+    /* ------------ Sidebar -------------- */
     .sidebar {
 
         background-color: $sidebar-gray;
@@ -53,7 +84,7 @@ body {
 
     }
 
-    /* Filter */
+    /* ------------ Filter --------------- */
 
     .filter.top-buffer {
        
@@ -69,11 +100,10 @@ body {
 
     }
 
-    /* Main */
+    /* -------------- Main --------------- */
 
     main {
 
-        /* Table Header */
         .table-header {
 
             .nav-tabs {
@@ -97,11 +127,11 @@ body {
 
             button {
                 margin-top: 15px;
+                background-color: #fff;
             }
 
         }
 
-        /* Table */
         .table {
 
             background-color: #fff;

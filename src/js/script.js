@@ -8,4 +8,12 @@ $(document).ready(function(){
         }
     });
 
+    $('#selectAllPolicies').click(function(){
+        if ($(this).is(':checked')) {
+            $('.policy-types input').attr('checked', true);
+        } else {
+            $('.policy-types input').attr('checked', false);
+        }
+    })
+
 });
